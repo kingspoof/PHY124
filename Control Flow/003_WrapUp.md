@@ -64,4 +64,4 @@ while(condition):
 ```
 
 ### When does a while-loop terminate?
-when the condition returns false
+when the condition is no longer true
