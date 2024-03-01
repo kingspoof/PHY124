@@ -4,7 +4,7 @@ def base_conversion(quotient: int, base: int) -> str:
     result = ""
     while(quotient != 0):
         result += char_dict[quotient % base]
-        quotient = (quotient - (quotient & base)) // base
+        quotient = (quotient - (quotient % base)) // base
     print(result[::-1])
 
 
