@@ -24,6 +24,7 @@ def get_t_value(value, index):
         t_value_dict[str(index)] = Fraction(-1 * value**2 * get_t_value(value, index-1))
     return t_value_dict[str(index)]
 
+
 # calculates the taylor expansion, a depth of 200 yeals the precision required for 1'000 digits
 def arctan_taylor_expansion(value, depth=2000):
     res = Fraction(0)
