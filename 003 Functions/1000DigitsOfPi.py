@@ -9,6 +9,8 @@ start = time.time()
 precision = (10**1000)
 
 t_value_dict = {}
+#although this could be simplified to: ((-1)**k*t**(2*k+1))
+#if we don't use the recursive definition. 
 def get_t_value(value, index):
     if(index == 0): 
         t_value_dict['0'] = Fraction(value)
