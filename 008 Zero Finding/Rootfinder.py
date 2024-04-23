@@ -1,4 +1,5 @@
 import numpy as np
+import numpy as np
 from matplotlib import pyplot as plt
 from fractions import Fraction
 
@@ -7,6 +8,8 @@ def find_root(f, df=None, start=0):
     # define the derivative of f if not specified
     if(df is None):
         def df(x, h=1e-12):
+            # Wenn sehr nahe bei 0, wird der wert hier sehr gross
+            # wenn der x weit weg von null, dann ist f(x+h) = f(x)
             return (f(x+h) - f(x)) / h
 
             
