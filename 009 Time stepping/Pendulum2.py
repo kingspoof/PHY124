@@ -34,7 +34,7 @@ def a(phi, tau):
 
 
 pendulas = []
-for i in range(1000):
+for i in range(100):
     pendulas.append({
         'phi': [pi/2 + i*0.0001],
         'v_phi': [0],
@@ -91,7 +91,7 @@ def main():
 
             
         for p in pendulas:
-            points = 50
+            points = 255
             for i in range(0 if len(p['pos']) < points else len(p['pos']) - points, len(p['pos'])-1):
                 cd = i/len(p['pos'])
                 pygame.draw.line(window, (cd * p['color'][0], p['color'][1], p['color'][2]), p['pos'][i], p['pos'][i+1], 1)
