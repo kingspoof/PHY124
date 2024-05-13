@@ -59,8 +59,8 @@ def animate(frame):
 
 # calculate the stuff, so we can look at it from a better perspective
 values = {}
-file_path = 'data/calculation.json'
-read_only = True
+file_path = 'data/year.json'
+read_only = False
 
 if(not read_only):
     for day in range(365):
