@@ -11,6 +11,8 @@ img = plt.imread('data/World.jpg')
 height = len(img)
 width = len(img[0])
 
+print(height, width)
+
 def Rx(angle): return np.array([[1, 0, 0], [0, cos(angle), sin(angle)], [0, -sin(angle), cos(angle)]])
 def Ry(angle): return np.array([[cos(angle), 0, -sin(angle)], [0,1,0], [sin(angle), 0, cos(angle)]])
 def Rz(angle): return np.array([[cos(angle), sin(angle), 0], [-sin(angle), cos(angle), 0], [0,0,1]])
@@ -60,7 +62,7 @@ def animate(frame):
 # calculate the stuff, so we can look at it from a better perspective
 values = {}
 file_path = 'data/year.json'
-read_only = False
+read_only = True
 
 if(not read_only):
     for day in range(365):
