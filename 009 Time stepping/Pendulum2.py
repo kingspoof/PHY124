@@ -8,7 +8,7 @@ pygame.init()
 # Setup for the variables
 g = 10
 L = 0.1
-l = 0.4
+l = 0.8
 ohm = 10
 omega = sqrt(g/l)
 gamma = omega**2/ohm**2
@@ -24,7 +24,7 @@ fps = 50
 fpsClock = pygame.time.Clock()
 width = 800
 height = 800
-multiplier = 500
+multiplier = 400
 
 window = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Pendulum Simulation')
